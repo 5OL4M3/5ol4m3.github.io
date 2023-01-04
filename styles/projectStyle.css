@@ -1,0 +1,110 @@
+#projects {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(4,9,30,0.7),rgba(0, 0, 0, 1)), url(../Images/purduebackground.jpg);
+    min-height: 100vh;
+    height: 200vh;
+    width: 100%;
+    padding-top: 110px;
+    color: white;
+}
+
+
+.tabContainer{
+    width: 80%;
+    height: 350px;
+    transform: translate(12.5%, 50%);
+}
+
+.buttonContainer {
+    height: 15%;
+}
+
+.buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonContainer button:hover{
+    background-color: white;
+    color: crimson;
+}
+
+.tabPanel {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    border-radius: 0 0 20px 20px;
+}
+
+.tabContent {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabContent img {
+    width: 100%;
+    zoom: 300px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(rgba(0,0,0,0.6), black);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: left;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.layer p {
+    text-align: left;
+    font-size: 17px;
+}
+
+.tabContent:hover img {
+    display: none;
+}
+
+.tabContent:hover h3 {
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .buttonContainer button{
+        font-size: 10px;
+    }
+    
+    .tabPanel {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        border-radius: 0 0 20px 20px;
+    }
+
+    .tabContainer{
+        width: 80%;
+        height: 500px;
+        transform: translate(12.5%, 10%);
+    }
+
+    #projects {
+        height: 100vh;
+    }
+    
+}

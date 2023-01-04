@@ -1,0 +1,164 @@
+#about {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(4,9,30,0.7),rgba(0, 0, 0, 1)), url(../Images/purduebackground.jpg);
+    min-height: 100vh;
+    padding-top: 110px;
+    position: relative;
+}
+
+.msg-container{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 14%;
+    top: 60%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    color: white;
+}
+
+#slider {
+    display: inline-flex;
+    transition: 0.5s;
+}
+
+.msg-col{
+    width: 600px;
+    height: 600px;
+}
+
+.msg-col h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.msg-col p{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.controller {
+    width: 330px;
+    height: 1px;
+    display: block;
+    background: #c0c0c0;
+    position: absolute;
+    top: 70%;
+    right: 14%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#line1,#line2,#line3 {
+    height: 10px;
+    width: 110px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#active{
+    width: 110px;
+    height: 5px;
+    border-radius: 10px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+#me {
+    width: auto;
+    mask-image: linear-gradient(black);
+    -webkit-mask-image: linear-gradient(black, 85%, transparent);
+    filter: drop-shadow(1px 1px 0 rgb(255, 255, 255)) 
+            drop-shadow(-1px -1px 0 rgb(255, 255, 255));
+    width: 550px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    color: linear-gradient(white,black);
+ }
+
+#me2 {
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .msg-container{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 60%;
+        overflow: hidden;
+        color: white;
+    }
+    
+    #slider {
+        display: inline-flex;
+        transition: 0.5s;
+    }
+    
+    .msg-col{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .msg-col h1 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    .msg-col p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    #active{
+        position: flex;
+    }
+
+    .controller {
+        width: 180px;
+        height: 5px;
+        display: block;
+        background: #c0c0c0;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        display: flex;
+    }
+    
+    #line1,#line2,#line3 {
+        height: 10px;
+        width: 60px;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    
+    #active{
+        width: 60px;
+        height: 10px;
+        background: crimson;
+        position: absolute;
+        transform: translateY(-50%);
+        transition: 0.5s;
+    }
+
+    #me {
+        display: none;
+    }
+
+    #me2 {
+        display: flex;
+        width: 55%;
+        position: absolute;
+        left: 25%;
+        border-radius: 100%;
+        margin-top: 10%;
+    }
+
+    .msg-col {
+        margin-top: 100px;
+    }
+}

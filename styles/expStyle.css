@@ -1,0 +1,107 @@
+#experience {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(4,9,30,0.7),rgba(0, 0, 0, 1)), url(../Images/purduebackground.jpg);
+    min-height: 70vh;
+    width: 100%;
+    padding-top: 110px;
+}
+#experience .content {
+    font-size: 20px;
+}
+.qualification {
+    display: block;
+    background: rgb(0, 0, 0);
+    padding: 20px 50px;
+    border-radius: 20px;
+    height: fit-content;
+    margin: 2vh 1vh;
+}
+
+.qualification ul {
+    margin-right: 100px;
+}
+#courses ul a{
+    text-decoration: none;
+    color: white;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+#courses ul a:hover {
+    color: crimson;
+}
+#experience img{
+    width: 50px;
+}
+.languages {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 15vh;
+    left: 0 vh;
+    padding: 20px 50px;
+}
+
+.even {
+    background-color: white;
+    color: black;
+}
+
+#framework div{
+    display: flex;
+}
+
+#qualification a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+}
+
+#qualification a:hover {
+    color: crimson;
+}
+
+@media only screen and (max-width: 1300px){
+    #experience .content {
+        display: grid;
+        font-size: 20px;
+    }
+    #courses {
+        font-size: 20px;
+        width: 100%;
+    }
+    #framework div{
+        display: block;
+    }
+    #qualification{
+        width: 100%;
+    }
+    #qualification li{
+        font-size: 20px;
+    }
+    #framework h2 {
+        overflow-wrap: break-word;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    #experience .content {
+        display: grid;
+        font-size: 20px;
+    }
+    #courses {
+        font-size: 15px;
+        width: 100%;
+    }
+    #framework div{
+        display: block;
+    }
+    #qualification{
+        width: 100%;
+    }
+    #qualification li{
+        font-size: 15px;
+    }
+    #framework h2 {
+        overflow-wrap: break-word;
+    }
+}

@@ -1,0 +1,92 @@
+.logo img {
+    max-width: 200px;
+    margin-left: 40px;
+}
+
+#nav-checkbox, .nav-toggle {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    transition: background-color 0.5s ease;
+}
+.nav-menu {
+    margin-right: 40px;
+}
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.nav-menu li a:hover{
+    color: crimson;
+}
+
+.bg-dark {
+    background-color: rgb(195, 46, 46);
+}
+
+.active {
+    background-color: black;
+}
+
+header .fa{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        width: 100%;
+    }
+    header .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    header .fa-circle-xmark{
+        top: 10px;
+        left: 10px;
+    }
+
+    #navigation ul li{
+        display: block;
+    }
+    #navigation{
+        position:fixed;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: 0px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+        padding-top: 50px;
+    }
+
+    #navigation ul li{
+        padding: 20px;
+    }
+}
