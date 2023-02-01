@@ -65,16 +65,18 @@
     height: 100%;
     background-color: linear-gradient(rgba(0,0,0,0.6), black);
     border-radius: 10px;
-    overflow: hidden;
     display: flex;
     align-items: left;
-    padding: 10px;
     flex-direction: column;
 }
 
 .layer p {
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
+    overflow-y: scroll;
+    overflow-x: none;
+    width: 95%;
+    margin: 15px;
 }
 
 .tabContent:hover img {

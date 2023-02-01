@@ -8,7 +8,9 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
+*::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
 footer {
     background-color: rgb(0, 0, 0);
     color: white;
